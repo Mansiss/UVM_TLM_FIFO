@@ -73,7 +73,7 @@ endfunction
 
 virtual task run_phase(uvm_phase phase);
 phase.raise_objection(phase);
-for(i=0;i>10;i++);begin
+for(i=0;i<10;i++);begin
 recv.get(data);
 `uvm_info("Cons",$sformatf("values we are getting %0x",data),UVM_NONE);
 #10;
